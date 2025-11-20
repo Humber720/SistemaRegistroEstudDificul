@@ -363,7 +363,7 @@ table th, table td {
   }
 }
 
- /* PARA FORZAR BOTONES */
+ /* PARA FORSAR BOTONES */
  @media (max-width: 600px) {
   /* Evita que la tabla sea más ancha que el contenedor */
   .container {
@@ -398,6 +398,30 @@ table th, table td {
     font-size: 12px !important;
     padding: 6px 8px !important;
   }
+ }
+ 
+
+/* Facebook */
+ .facebook-btn {
+  display: block;
+  max-width: calc(100% - 20px); /* ancho ligeramente menor que el contenedor */
+  margin: 20px auto;            /* centrado horizontal con separación */
+  padding: 14px;
+  background-color: #1877F2;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+  font-size: 1.1rem;
+  border-radius: 12px;
+  text-decoration: none;
+  transition: 0.3s ease, transform 0.2s;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+.facebook-btn:hover {
+  background-color: #0d5fcc;
+  transform: scale(1.03);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.3);
 }
 
 
