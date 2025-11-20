@@ -3,18 +3,53 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Registro de Estudiantes con Posible Reprobación</title>
+    <title>Formulario de Registro para Estudiantes con Dificultades</title>
     <link rel="stylesheet" href="estilos.css">
 </head>
 <body>
     <div class="container">
-        <h1>REGISTRO DE POSIBLES REPROBACIONES - 2° TRIMESTRE</h1>
+        <h1>REGISTRO DE ESTUDIANTES CON DIFICUTADES PARA ENTREVISTA PEDAGÓGICA</h1>
         <p class="subtitle">Prof. Humberto Yupanqui C., Prof. Raúl Mamani M. - ASOSORES: 2DO DE SECUNDARIA</p>
-        <center><h4>Ingrese los datos de cada estudiante y agréguelo a la lista. Cuando termine, envíe la lista completa.</h4></center>
+        <center><h4>Estimado(a) Maestra(a): Completa el siguiente formulario para registrar estudiantes con 
+            dificultades o posibles reprobaciones, esto con el fin de enviar citación correspondiente. 
+            Una vez llenado agregue cada estudiante y luego envie la lista completa.</h4></center>
         
         <form id="studentForm">
-            <label for="nombre">Nombre del Estudiante</label>
-            <input type="text" id="nombre" name="nombre" placeholder="Ej: Juan Pérez" required>
+                  <!-- Selección de estudiante -->
+      <label for="nombre"><strong>Seleccione el estudiante:</strong></label>
+      <select name="nombre" id="nombre" required>
+        <option value="">-- Seleccione un estudiante --</option>
+        <option>BLANCO CAPIONA MATEO IVAR</option>
+        <option>CALATAYUD YUJRA BRENDA MAYTE</option>
+        <option>CHINO COYO GENESIS CECILIA</option>
+        <option>CORINA QUISPE JUAN FERNANDO</option>
+        <option>CUTIPA ESPEJO CRISTIAN ELVIS</option>
+        <option>ESCALANTE VACA MARIA DEL CIELO</option>
+        <option>ESPEJO ALANOCA KEYLA ALEIDIS</option>
+        <option>FLORES HUMEREZ JASIEL NOEMI</option>
+        <option>FLORES VARGAS MIGUEL ANGEL</option>
+        <option>GARCIA GARCIA GABRIEL KEVIN</option>
+        <option>GONZALES ROSAS RICARDO</option>
+        <option>GUARACHI LIMACHI FABRICIO DANIEL</option>
+        <option>GUARACHI MARTINEZ ZOEY SUMAYA</option>
+        <option>LUNA MERLO KEVIN PATRICIO</option>
+        <option>MAMANI HUANCA JHENNY YOSELIN</option>
+        <option>MAYTA MAMANI JUAN RODRIGO</option>
+        <option>POMA QUISPE JULIAN NEYMAR</option>
+        <option>PUSARI SARICORDIA ANA CELESTE</option>
+        <option>QUISPE ALVAREZ PAOLA REYNA</option>
+        <option>QUISPE GONZALES HANNA JANDY</option>
+        <option>QUISPE MAMANI NEYMAR DIDYEL</option>
+        <option>QUISPE PAUCARA DRAKE NOLAND</option>
+        <option>QUISPE QUISPE LEIDY FLORA</option>
+        <option>RAMIREZ VARGAS KEVIN</option>
+        <option>ROJAS MALLCU YUSARA GENESIS</option>
+        <option>TAPIA SEJAS AARON JUSTINIANO</option>
+        <option>TICONA LIMA ANGELA MASHIEL</option>
+        <option>YUJRA SIRPA DELIA</option>
+        <option>ZACARI PAUCARA LESLIE MAYLI</option>
+        <option>ZAMBRANA OMONTE JOSE ANTONIO</option>
+      </select>
         
             <label for="area">Área</label>
             <select id="area" name="area" required>
@@ -101,17 +136,18 @@
       <button id="cerrar-modal" style="margin: 8px 10px; padding: 8px 16px; border:none; border-radius:6px; background:#888; color:#fff; cursor:pointer;">Cerrar</button>
       <button id="descargarPDF" style="margin: 8px 10px; padding: 8px 16px; border:none; border-radius:6px; background:#2980b9; color:#fff; cursor:pointer; display:none;">Descargar PDF</button>
     </div>
-  </div>
-  
-      
-  
+</div>  
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf-autotable/3.5.25/jspdf.plugin.autotable.min.js"></script>
-  
-    
-    
+
     <script src="script.js"></script>
+<!-- BOTÓN FACEBOOK A TODO ANCHO -->
+    <div>
+    <a href="https://www.facebook.com/share/v/1Bh6mKNUb2/" target="_blank" class="facebook-btn">
+      🔵 Seguir Facebook
+    </a>
+    </div>  
 
 </body>
 </html>
