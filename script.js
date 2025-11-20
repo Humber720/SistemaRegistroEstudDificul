@@ -91,7 +91,7 @@ function editStudent(index) {
 // ----------------------
 sendListBtn.addEventListener('click', () => {
   if (students.length === 0) {
-    alert('Agregue estudiantes con dificultades.');
+    alert('Agrega estudiantes con dificultades.');
     return;
   }
 
