@@ -98,7 +98,7 @@ sendListBtn.addEventListener('click', () => {
   spinner.style.display = 'inline-block';
   sendListBtn.disabled = true;
 
-  fetch('https://api.sheetbest.com/sheets/d4ccc830-b88d-4039-9baf-c8843110cbbd', {
+  fetch('https://api.sheetbest.com/sheets/f2e36ed5-1337-44fa-b20f-be19683cf8bd', {
     method: 'POST',
     body: JSON.stringify(students),
     headers: { 'Content-Type': 'application/json' }
@@ -153,7 +153,7 @@ function generatePDF() {
   const doc = new jsPDF();
 
   doc.setFontSize(16);
-  doc.text('Lista de Posibles Reprobaciones - 2° Trimestre', 105, 15, { align: 'center' });
+  doc.text('Lista de Estudiantes con Dificultades - 3° Trimestre', 105, 15, { align: 'center' });
 
   const ahora = new Date();
   const fecha = ahora.toLocaleDateString('es-ES');
@@ -197,4 +197,3 @@ style.textContent = `
   100% { transform: rotate(360deg);}
 }`;
 document.head.appendChild(style);
-
